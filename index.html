@@ -30,12 +30,15 @@ body {
     z-index: -1;
     top: 0; left: 0;
     width: 100vw; height: 100vh;
-    background: rgba(237, 229, 201, 0.2); /* 必须有透明度 */
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); /* 兼容 iOS */
-    border-radius: 10px;
-    padding: 20px;
-    background-blend-mode: multiply, normal;
+    
+    
+  background-color: rgb(245,240,225); /* 宣纸底色 */
+  background-image: url('paper-texture.png'); /* 小噪点纹理图 */
+  background-repeat: repeat;
+  background-size: auto;
+
+    
+      background-blend-mode: multiply, normal;
     background-size: cover;
     
 }
@@ -43,7 +46,7 @@ body {
 /* 1. 声明 */
 @font-face {
   font-family: 'MyFont';           /* 自定义名字，随便起 */
-  src: url('/古典宋.ttf') format('truetype'),
+  src: url('/song.ttf') format('truetype'),
   font-weight: normal;             /* 400 */
   font-style: normal;              /* 非斜体 */
 }
@@ -68,7 +71,7 @@ body {
 .texttwo {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translateX(-50%);
 }
 .textone {
@@ -130,7 +133,7 @@ animation-delay: var(--animation-delay);
     </div>
     <div class="container"></div>
     <div id="sign">
-        <p>「颜放」为你展现.</p>
+        <p>「颜放」为你展现.</p >
     </div>
 <script>
 // poem
