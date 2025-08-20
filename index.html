@@ -30,11 +30,12 @@ body {
     z-index: -1;
     top: 0; left: 0;
     width: 100vw; height: 100vh;
-    background: 
-        radial-gradient(ellipse at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%), /* 磨砂光斑 */
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='paper' x='0%25' y='0%25' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.04' numOctaves='5' result='noise'/%3E%3CfeDiffuseLighting in='noise' lighting-color='%23f5f2ea' surfaceScale='1'%3E%3CfeDistantLight azimuth='45' elevation='60'/%3E%3C/feDiffuseLighting%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper)'/%3E%3C/svg%3E"),
-        #f7f3e9; /* 宣纸底色 */
-      background-blend-mode: multiply, normal;
+    background: rgba(237, 229, 201, 0.2); /* 必须有透明度 */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* 兼容 iOS */
+    border-radius: 10px;
+    padding: 20px;
+    background-blend-mode: multiply, normal;
     background-size: cover;
     
 }
