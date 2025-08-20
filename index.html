@@ -176,8 +176,18 @@ animation-delay: var(--animation-delay);
 </style>
   </head>
   <body>
-    <audio id="bgm" src="https://gitee.com/Fak3adm1n/file/raw/master/4u.mp3" autoplay="autoplay" loop>
-</audio>
+
+<audio id="bgm" src="https://gitee.com/Fak3adm1n/file/raw/master/4u.mp3" autoplay loop muted></audio>
+<script>
+  document.addEventListener("click", () => {
+    const bgm = document.getElementById("bgm");
+    bgm.muted = false;
+    bgm.play();
+  }, { once: true });
+</script>
+
+    
+    
     <div class="stars"></div>
     <div class="textone">
       <h2>何幸同度七夕</h2>
