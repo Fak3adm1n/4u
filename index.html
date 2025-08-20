@@ -176,8 +176,7 @@ animation-delay: var(--animation-delay);
 </style>
   </head>
   <body>
-    <audio id="bgm" autoplay loop muted>
-  <source src="https://gitee.com/Fak3adm1n/file/raw/master/4u.mp3" type="audio/mpeg">
+    <audio id="bgm" src="https://gitee.com/Fak3adm1n/file/raw/master/4u.mp3" autoplay="autoplay" loop>
 </audio>
     <div class="stars"></div>
     <div class="textone">
@@ -194,11 +193,7 @@ animation-delay: var(--animation-delay);
         <p>2025-8-29 「颜放」为你展现.</p >
     </div>
 <script>
-  document.addEventListener("click", () => {
-    const bgm = document.getElementById("bgm");
-    bgm.muted = false; 
-    bgm.play();
-  }, { once: true });
+  
 // poem
 var words=[
      '朝朝暮暮念君颜',
